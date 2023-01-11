@@ -1,0 +1,106 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Celsius to Fahrenheit</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/s0z6aVxw_NwPmCF4G6KfA3d9G_XKI1OzFgzmFjfMMyu_fjLcJ00FwjF08-3hWjqpWdw=s256-rw">
+</head>
+<body>
+<h1>Celsius to Fahrenheit</h1>
+
+<div class="temp">
+	<span>°C</span>
+	<p>Celsius</p>
+	<input type="number" id="celsius_input">
+	<p>=</p><p>Fahrenheit</p>
+	<button onclick="cel_go()">Go</button>
+</div>
+<br>
+<p id="far_answer"></p>
+
+<br>
+
+<div class="temp">
+	<span>°F</span>
+	<p>Fahrenheit</p>
+	<input type="number" id="fahrenheit_input">
+	<p>=</p><p>Celsius</p>
+	<button onclick="far_go()">Go</button>
+</div>
+<br>
+<p id="cel_answer"></p>
+
+<script>
+	function cel_go() {
+		var celInput = document.getElementById("celsius_input");
+		var farAnswer = document.getElementById("far_answer");
+		var celCalc = (celInput.value * 1.8) + 32;
+		farAnswer.innerText = celCalc;
+	}
+
+	function far_go() {
+		var farInput = document.getElementById("fahrenheit_input");
+		var celAnswer = document.getElementById("cel_answer");
+		var farCalc = (farInput.value - 32)/ 1.8;
+		celAnswer.innerText = farCalc;
+	}
+</script>	
+
+
+<style>
+body {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-family: sans-serif;
+	background-color: #3d98e1;
+	color: white;
+	padding: 10px;
+}
+
+p {
+	font-family: sans-serif;
+	font-weight: 600;
+}
+
+span {
+	font-family: sans-serif;
+	font-weight: 600;
+	color: #3d98e1;
+}
+
+.temp {
+	display: inline-flex;
+	margin-top: 30px;
+}
+
+.temp p {
+	margin: 0 10px;
+}
+
+input {
+	width: 40px;
+	text-align: center;
+}
+
+#cel_answer {
+	color: #3d98e1;
+	font-size: 1.5em;
+}
+
+#far_answer {
+	color: #3d98e1;
+	font-size: 1.5em;
+}
+
+button {
+	padding: 5px;
+	border: none;
+	background-color: #3d98e1;
+	color: white;
+	border-radius: 5px;
+}
+</style>
+</body>
+</html>
