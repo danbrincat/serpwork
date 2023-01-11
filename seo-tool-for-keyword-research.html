@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>SEO Tool Mule | Free SEO Tools for All Your Marketing Needs</title>
-    <script src="scripts/main.js" type="text/javascript"></script>
+  <title>Free SEO Keyword Optimizer - SEO Tool Mule</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/menus.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="scripts/keyword-research-2.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/keyword-research.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/homepage.css" type="text/css">
-    <link rel="icon" type="image/x-icon" href="images/serp-work-favicon.png">
+    <link rel="icon" type="image/png" href="images/free-seo-tools-favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex">
 
      <!-- GDPR Popup Notice Script -->
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ead532be-e158-4a89-9fed-8bda4ca0eb40" data-blockingmode="auto" type="text/javascript"></script>
@@ -38,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Responsive Nav -->
 <script>
 document.getElementById('topNav').innerHTML = header;
+document.getElementById('menu-1').classList.add('active');
 document.getElementById('bottomFooter').innerHTML = footer;
 
 function myFunction() {
@@ -62,11 +64,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="topNav"></div>
 <!-- END Top Navigation -->
 
-
-<!-- More Top Nav -->
+<!-- Top Nav -->
 <div class="top-banner"><span>Completely Free! No Subscriptions. No Sign-Up Required.</span></div>
 <!-- End of Top Nav -->
-
 <!-- Top mobile banner ad -->
 <div class="banner-mobile-top">
 </div>
@@ -78,57 +78,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Start of Main Page Content -->
 <div id="main-content">
 
-	<div class="top-section">
-		<div class="col-6">
-			<span class="site-title">SEO Tool Mule.com</span>
-			<br>
-			<h1>SEO for Everyone.</h1>
-			<p>Free to use SEO tools and advice for all of your digital marketing needs.</p>
-			<a href="/seo-keyword-optimizer"><button>VIEW TOOLS</button></a>
-			<a href="/blog"><button class="second-btn">READ BLOG</button></a>
-		</div>
-		<div class="col-6">
-			<img src="images/homepage-banner-2-505x457.png"/>
-		</div>
-	</div>		
+<h1>SEO Tool for Keyword Research</h1>
+<p style="text-align: center;"><i>Research and discover new relevant keywords that will give your SEO a competitve edge</i></p>
+<div id="search-toolbar">
+  <form autocomplete="on" onsubmit="return false">
+  <input type="text" id="keyword-input" placeholder="Enter a keyword (example: used books)" required>
+  <input type="submit" value="search" onclick="getVal();" class="search-button" required>
+  </form>
+</div>
 
+<!-- results area -->
+<div>
+  <table id="keyword-results">
+    <thead>
+      <tr>
+        <th>Keyword</th>
+        <th>Similarity</th>
+        <th>Search Volume</th>
+        <th>CPC</th>
+        <th>Paid Competition</th>
+      </tr>  
+    </thead>
+    <tbody id="results-area">
+      
+    </tbody>
+  </table>
+</div>
 
-  <p class="first-paragraph">At SEO Mule Tool, we offer affordable SEO and digital marketing tools to website owners and businesses alike. We belive you do not need expensive tools and software to have a well optimized website that ranks well. We hope to provide tools and guidance that are accessible for everyone to understand and use.</p>
+<div id="test-area"></div>  
 
-  <h2>Try out our SEO Tools for Free!!</h2>
-  <div class="tools">
-    <p><span class="strong">SEO Keyword Optimizer</span></p>
-    <p>Our free keyword optimizer reviews your specific page content for your primary keyword, and provides bespoke suggested improvements for how to adapt your content to better rank organically.</p>
-    <p><a href="/seo-keyword-optimizer">Try it here</a></p>
-  </div>  
+<div id="test-area-two"></div>  
 
-  <div class="email-signup">
-       <!-- Subscription Form -->
-  <p class="bold-title">Subscribe to our mailing list</p>
-  <p>Get notified about our featured updates and new content.</p>
-   <script type="text/javascript">var submitted=false;</script>
-   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://seo-tool-mule.com/subscribed/';}"></iframe>
-    <div class="wrapper">
-      <form id="myForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7EsyIuroyUKaTFlyuI3tUmwZFEtRMMhtL3rfHKcRSmZzNKA/formResponse" method="post" target="hidden_iframe" onsubmit="show_alert()">
-         <div class="field">
-            <input type="email" name="entry.2098640428" placeholder="Email Address" required>
-            <button type="submit" for="click" class="btn-2">Submit</button>
-         </div>
-      </form>
-    </div> 
-
-    <script type="text/javascript">
-        //submission alert
-        function show_alert() {
-          alert("Thank you for subscribing.");
-          setTimeout(function () {
-            document.getElementById("myForm").reset();
-          }, 100);
-        }
-    </script>  
-    <!-- form end -->
-  </div>  
-
+<p>here</p>
+<p id="showData"></p>
 
 
 <!-- featured content -->
@@ -143,6 +125,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   </div>
 </div>
+
+<!-- loading animation -->
+<div class="fix-top">
+  <img src="images/loading-animation.svg" id="loading" />
+</div>  
+
 
 <!-- back to top button -->
 <div class="fix-bottom">

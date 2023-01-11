@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>SEO Tool Mule | Free SEO Tools for All Your Marketing Needs</title>
-    <script src="scripts/main.js" type="text/javascript"></script>
+  <title>Free SEO Keyword Optimizer - SEO Tool Mule</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/menus.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="scripts/seo-optimizer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/seo-optimizer.css" type="text/css">
+    <link rel="stylesheet" href="css/instagram.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/homepage.css" type="text/css">
-    <link rel="icon" type="image/x-icon" href="images/serp-work-favicon.png">
+    <link rel="icon" type="image/png" href="images/free-seo-tools-favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -38,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Responsive Nav -->
 <script>
 document.getElementById('topNav').innerHTML = header;
+document.getElementById('menu-1').classList.add('active');
 document.getElementById('bottomFooter').innerHTML = footer;
 
 function myFunction() {
@@ -62,11 +64,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="topNav"></div>
 <!-- END Top Navigation -->
 
-
-<!-- More Top Nav -->
+<!-- Top Nav -->
 <div class="top-banner"><span>Completely Free! No Subscriptions. No Sign-Up Required.</span></div>
 <!-- End of Top Nav -->
-
 <!-- Top mobile banner ad -->
 <div class="banner-mobile-top">
 </div>
@@ -75,61 +75,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="banner-place-left">
 </div>
 <!-- End of banner -->
+<div class="banner-section">
+	<h1>Instagram Generator</h1>
+</div>
 <!-- Start of Main Page Content -->
 <div id="main-content">
 
-	<div class="top-section">
-		<div class="col-6">
-			<span class="site-title">SEO Tool Mule.com</span>
-			<br>
-			<h1>SEO for Everyone.</h1>
-			<p>Free to use SEO tools and advice for all of your digital marketing needs.</p>
-			<a href="/seo-keyword-optimizer"><button>VIEW TOOLS</button></a>
-			<a href="/blog"><button class="second-btn">READ BLOG</button></a>
-		</div>
-		<div class="col-6">
-			<img src="images/homepage-banner-2-505x457.png"/>
-		</div>
-	</div>		
+<p style="text-align: center; margin: 10px 20px 20px 20px; color: #4a4a4a; font-size: 16px;">Use the free SEO keyword optimizer below to review individual page content for your primary and/or secondary keywords.<br><br>Type or paste the relevant keyword(s) and page URL into the below form and click 'submit'. You will then immediately be presented with a graded score and any relevant suggested improvements to better optimize your page for your desired keywords.<br><br><i>Prefer to enter your page data manually? Use our html <a href="seo-grader">SEO Grader</a> instead.</i></p>
 
+<div class="text-entry">
+  <form autocomplete="off" onsubmit="return false">
+  <div class="form-keywords">
+  <label for="page">Primary Keyword:</label><br>
+  <input type="text" name="primary-keyword" id="primary-keyword" placeholder="Type the primary keyword you would like to rank for" required><br>
+  <span id="second-keyword-section">
+    <label for="page">Secondary Keyword:</label><br>
+    <input type="text" name="secondary-keyword" id="secondary-keyword" placeholder="... And a secondary keyword if neccersary"><br>
+  </span>
+  <button id="add-keyword-button" class="form-button" onclick="sectionSpan()">Additional Keyword +</button><br>
+  <input type="url" name="url" id="url-input" placeholder="Input the page url you want to optimize" required>
+  <input type="submit" onclick="getVal();" class="submit-button" required>
+</div>
+</form>
+</div>
 
-  <p class="first-paragraph">At SEO Mule Tool, we offer affordable SEO and digital marketing tools to website owners and businesses alike. We belive you do not need expensive tools and software to have a well optimized website that ranks well. We hope to provide tools and guidance that are accessible for everyone to understand and use.</p>
+<!-- Info Listed -->
+<div id="api-info" style="max-width: 900px;word-wrap: break-word;">
 
-  <h2>Try out our SEO Tools for Free!!</h2>
-  <div class="tools">
-    <p><span class="strong">SEO Keyword Optimizer</span></p>
-    <p>Our free keyword optimizer reviews your specific page content for your primary keyword, and provides bespoke suggested improvements for how to adapt your content to better rank organically.</p>
-    <p><a href="/seo-keyword-optimizer">Try it here</a></p>
-  </div>  
+</div>
 
-  <div class="email-signup">
-       <!-- Subscription Form -->
-  <p class="bold-title">Subscribe to our mailing list</p>
-  <p>Get notified about our featured updates and new content.</p>
-   <script type="text/javascript">var submitted=false;</script>
-   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://seo-tool-mule.com/subscribed/';}"></iframe>
-    <div class="wrapper">
-      <form id="myForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7EsyIuroyUKaTFlyuI3tUmwZFEtRMMhtL3rfHKcRSmZzNKA/formResponse" method="post" target="hidden_iframe" onsubmit="show_alert()">
-         <div class="field">
-            <input type="email" name="entry.2098640428" placeholder="Email Address" required>
-            <button type="submit" for="click" class="btn-2">Submit</button>
-         </div>
-      </form>
-    </div> 
+<!-- Results Section -->
+<div id="improv-section">
+  <p class="page-url-display"></p>
+<div class="score-container">
+<svg class="progress-ring" width="120" height="120">
+  <circle class="progress-ring__circle" stroke-width="7" fill="#d9d9d9" r="52" cx="60" cy="60" style="stroke-dasharray: 326.726, 326.726; stroke-dashoffset: 326.726; stroke-linecap: round;"/>
+</svg>
+<p id="score-display"></p>
+</div>
 
-    <script type="text/javascript">
-        //submission alert
-        function show_alert() {
-          alert("Thank you for subscribing.");
-          setTimeout(function () {
-            document.getElementById("myForm").reset();
-          }, 100);
-        }
-    </script>  
-    <!-- form end -->
-  </div>  
+  <h2>Suggested Improvements</h2>
+  <div id="improv-items"></div>
+  <div>
+    
+  </div>
+</div>
 
-
+<!-- how- to video -->
+<h3 style="text-align: center;margin-top: 50px;">How to use our seo keyword optimizer</h3>
+<video class="video" controls poster="images/how-to-video-thumb-668x377.png">
+  <source src="videos/seo-tool-mule-tutorial-video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 <!-- featured content -->
 <div class="featured-info">
@@ -143,6 +140,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   </div>
 </div>
+
+<!-- loading animation -->
+<div class="fix-top">
+  <img src="images/loading-animation.svg" id="loading" />
+</div>  
+
 
 <!-- back to top button -->
 <div class="fix-bottom">
