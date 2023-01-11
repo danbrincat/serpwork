@@ -76,17 +76,86 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="text-entry">
   <form autocomplete="off" onsubmit="return false">
   <div class="form-keywords">
-  <label for="page">Primary Keyword:</label><br>
-  <input type="text" name="primary-keyword" id="primary-keyword" placeholder="Type the primary keyword you would like to rank for" required><br>
-  <span id="second-keyword-section">
-    <label for="page">Secondary Keyword:</label><br>
-    <input type="text" name="secondary-keyword" id="secondary-keyword" placeholder="... And a secondary keyword if neccersary"><br>
-  </span>
-  <button id="add-keyword-button" class="form-button" onclick="sectionSpan()">Additional Keyword +</button><br>
-  <input type="url" name="url" id="url-input" placeholder="Input the page url you want to optimize" required>
+  <input type="url" name="url" id="url-input" placeholder="Website" required>
   <input type="submit" onclick="getVal();" class="submit-button" required>
 </div>
 </form>
+</div>
+  
+<div id="results">
+  <table>
+<thead>
+  <tr>
+    <th></th>
+    <th>Keyword</th>
+    <th>Frequency</th>
+    <th>Density</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td>far</td>
+    <td>4</td>
+    <td class="red">4.04%</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>blind</td>
+    <td>4</td>
+    <td class="red">4.04%</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>line</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>mountains</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>text</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>live</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>texts</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>bookmarksgrove</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>question</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>small</td>
+    <td>2</td>
+    <td>2.02%</td>
+  </tr>
+</tbody>
+</table>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
 </div>
 
 </div>
@@ -107,6 +176,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- footer -->
 <div id="bottomFooter"></div>
 <!-- footer end -->
+  
+<style>
+.text-entry {
+    text-align: center;
+    background-color: #1fa0ea;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+</style>
 
 </body>
 </html>
