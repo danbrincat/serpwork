@@ -1,0 +1,12 @@
+{ 
+	"keywords":
+	 {
+		"2 nd hand books": {"similarity": "0.5151567408317742", "search volume": "10", "cpc": "1.228663", "paid competition": "0.6031746031746"},
+		"2nd hand books": {"similarity": "0.5151567408317742", "search volume": "880", "cpc": "1.077432", "paid competition": "0.57614138438881"},
+		"2nd hand books for sale": {"similarity": "0.41212539266541937", "search volume": "10", "cpc": "1.58172", "paid competition": "1"},
+		"2nd hand books online": {"similarity": "0.5151567408317742", "search volume": "50", "cpc": "1.243352", "paid competition": "0.91948051948052"},
+		"2nd hand bookstore near me": {"similarity": "0.02549409114749914", "search volume": "720", "cpc": "1.219367", "paid competition": "0.13864927414265"},
+		"2nd hand manga": {"similarity": "0.020208987775698958", "search volume": "10", "cpc": "0.18495", "paid competition": "0.88571428571429"}
+	}
+
+}
