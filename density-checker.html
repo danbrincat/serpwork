@@ -70,6 +70,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End of banner -->
 <!-- Start of Main Page Content -->
 <div id="main-content">
+  
+  <h1>Keyword Density Checker</h1>
 
   <p style="text-align: center; margin: 10px 20px 20px 20px; color: #4a4a4a; font-size: 16px;">Use the free SEO keyword optimizer below to review individual page content for your primary and/or secondary keywords.<br><br>Type or paste the relevant keyword(s) and page URL into the below form and click 'submit'. You will then immediately be presented with a graded score and any relevant suggested improvements to better optimize your page for your desired keywords.<br><br><i>Prefer to enter your page data manually? Use our html <a href="seo-grader">SEO Grader</a> instead.</i></p>
 
@@ -77,12 +79,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <form autocomplete="off" onsubmit="return false">
   <div class="form-keywords">
   <input type="url" name="url" id="url-input" placeholder="Website" required>
-  <input type="submit" onclick="getVal();" class="submit-button" required>
+  <button onclick="getVal();" class="submit-button">
 </div>
 </form>
 </div>
   
-<div id="results">
+<div id="results" class="hide">
   <table>
 <thead>
   <tr>
@@ -184,6 +186,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     padding: 25px 10px;
     margin-bottom: 20px;
 }
+.hide {
+  display: none;
+}
 .red {
   background-color: red;
   color: white;
@@ -200,6 +205,13 @@ td {
   padding: 10px;
 }
 </style>
+  
+<script>
+  function getVal() {
+    var results = document.getElementById("results");
+    results.classList.remove("hide", true);
+  }
+</script>  
 
 </body>
 </html>
