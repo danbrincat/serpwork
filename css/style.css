@@ -1,0 +1,453 @@
+/* ----------------------- TOP NAV ----------------- */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #1fa0ea;
+  overflow: hidden;
+  padding: 0 50px;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+  border-bottom: solid #5d5d5d 3px;
+  font-weight: 500;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Site Title in nav bar */
+.site-title {
+    padding: 15px 50px 14px 16px;
+    float: left;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.topnav img {
+    vertical-align: middle;
+    display: block;
+    float: left;
+}
+
+a.nav-image {
+    padding: 0;   
+}
+
+a.icon {
+  color: #fff;
+  font-size: 25px;
+}
+
+a.icon:hover {
+  color: #fff;
+}
+
+
+/* ------------------------------ PRIMARY STYLING ------------- */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    color: #252525;
+}
+
+h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    color: #252525;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.banner-place-left {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    padding: 20px;
+}
+
+.banner-place-right {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    float: right;
+    padding: 20px;
+}
+
+.banner-place-left .it-client.it-client-9.it-client-9-fx-show-init.it-client-9-fx-show-display {
+    float: left;
+}
+
+.banner-place-right .it-client.it-client-9.it-client-9-fx-show-init.it-client-9-fx-show-display {
+    float: right;
+}
+
+.banner-mobile-top {
+  display: none;
+}
+
+.banner-mobile-bottom {
+  display: none;
+}
+
+#main-content a {
+  color: #1fa0ea;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+ul {
+  padding: 15px;
+}
+
+span.strong {
+    font-weight: 800;
+}
+
+input {
+    margin: 10px 10px;
+    width: 70%;
+    border-radius: 2px;
+    border: solid 1px #d9d9d9;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    color: #252525;
+}
+
+textarea {
+    margin: 10px 10px;
+    width: -webkit-fill-available;
+    height: 150px;
+    width: 80%;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    border-radius: 2px;
+    border: solid 1px #d9d9d9;
+}
+
+textarea:focus-visible {
+    outline: none;
+}
+
+button {
+    background-color: #1fa0ea;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3f97ca;
+}
+
+.featured-info {
+    display: inline-flex;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.col {
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+
+#main-content {
+    margin: 20px 200px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    display: inline-block;
+}
+
+.video {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  display: block;
+}
+
+.oneCPad {
+  padding-top: 100px;
+}
+
+.twoCPad {
+  padding-top: 200px;
+}
+
+#footer {
+    background: grey;
+    padding: 50px 200px 100px 200px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #252525;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    line-height: 2;
+}
+
+.footer-container {
+  display: inline-flex;
+  width: 100%;
+}
+
+p.copyright {
+  float: right;
+  color: #fff;
+  font-size: 14px;
+}
+
+.CookieDeclaration {
+    display: none;
+}
+
+#footer .cookie-preferences a {
+  color: #2e2e2e;
+} 
+
+/* ---------------------- BOOTSTRAP ------------ */
+
+.col-8 {
+ max-width: 66.66%;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.col-6 {
+  max-width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.col-4 {
+  max-width: 33.33%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.col-1 {
+  max-width: 8.33%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ---------------------- RESPONSIVE STYLING ------------ */
+
+/* For tablets */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .topnav {
+      padding: 0 20px;
+    }
+
+    #main-content {
+      margin: 0 30px;
+    }
+
+    .site-title {
+      display: none;
+    }
+
+    .back-to-top span {
+      margin-right: 50px;
+    }
+
+    #footer {
+      padding: 50px 20px 100px 20px;
+    }
+
+    .banner-place-left {
+      display: none;
+    }
+
+    .banner-place-right {
+      display: none;
+    }
+
+    .banner-mobile-top {
+      display: block;
+    }
+
+    .banner-mobile-bottom {
+      display: block;
+    }
+
+    .banner-mobile-top .it-client {
+      margin: auto;
+    }
+
+    .banner-mobile-bottom .it-client {
+      margin: auto;
+    }
+
+}
+
+/* For phones */
+@media screen and (max-width: 480px) {
+    .topnav {
+      padding: 5px 20px;
+    }
+
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 5px 20px;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+    #main-content {
+      margin: 0 20px;
+    }
+    .site-title {
+      display: none;
+    }
+    .back-to-top span {
+      margin-right: 50px;
+    }
+    #footer {
+      padding: 50px 20px 100px 20px;
+    }
+    .responsive a:nth-child(3)  {
+      margin-top: 50px;
+    }
+    .topnav a.active {
+    border-bottom: none;
+    text-decoration: underline;
+    }
+
+    .footer-container {
+      display: inline-block;
+    }
+
+    .col {
+      width: 100%;
+    }
+
+    input {
+      width: 80%;
+    }
+
+    p.copyright {
+      float: left;
+    }
+
+    .banner-place-left {
+      display: none;
+    }
+
+    .banner-place-right {
+      display: none;
+    }
+
+    .banner-mobile-top {
+      display: block;
+    }
+
+    .banner-mobile-bottom {
+      display: block;
+    }
+
+    .banner-mobile-top .it-client {
+      margin: auto;
+    }
+
+    .banner-mobile-bottom .it-client {
+      margin: auto;
+    }
+
+    .video {
+      width: 100%;
+    }
+
+    .col-6 {
+      max-width: 100%;
+    }
+
+}

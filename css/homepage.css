@@ -1,0 +1,141 @@
+.banner {
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)),url("https://s3.amazonaws.com/seo-tool-mule.com/images/home-banner-image-1040x400.jpg");
+  background-position: center center;
+  background-color: #1fa0ea;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.banner .container {
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner h1, .banner p {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.first-paragraph {
+  text-align : center;
+  margin: 80px 100px;
+}
+
+.tools {
+  background-color: #d9d9d94d;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.tools:hover {
+  background-color: #d9d9d9bf;
+}
+
+.email-signup {
+  background-color: #1fa0ea;
+  text-align: center;
+  padding: 1px 0 25px 0;
+}
+
+.email-signup .bold-title {
+  color: #fff;
+  font-size: 30px;
+}
+
+.email-signup p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.email-signup input{
+  font-size: 16px;
+  padding: 8px;
+  width: 60%;
+}
+
+.email-signup button {
+  background-color: #fff;
+  color: #252525;
+  font-size: 16px;
+}
+
+small {
+  font-size: 10px;  }
+
+.top-section {
+  padding: 20px;
+}  
+
+.top-section h1 {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.top-section img {
+  max-width: 350px;
+  margin-left: 5%;
+}
+
+.top-section .site-title {
+  font-family: Arial, sans-serif;
+  color: black;
+  font-size: 16px;
+  padding: 0;
+  font-weight: 500;
+}
+
+.top-section button {
+  font-size: 18px;
+  border: solid 2px #1fa0ea;  
+}
+
+.top-section button.second-btn {
+  background-color: #fff;
+  border: solid 2px #1fa0ea;
+  color: #1fa0ea;
+}
+
+.top-section button:hover {
+  background-color: #fff;
+  border: solid 2px #1fa0ea;
+  color: #1fa0ea;
+}
+
+.top-section button.second-btn:hover {
+  background-color: #1fa0ea;
+  border: solid 2px #1fa0ea;
+  color: #fff;
+}
+
+/* For phones */
+@media screen and (max-width: 500px) {
+
+  .first-paragraph {
+    margin: 40px 50px;
+  }
+
+  .email-signup {
+    padding: 20px;
+  }
+
+  .top-section img {
+    max-width: 90%;
+    margin: 20px 0 0 0;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+
+  .top-section img {
+    max-width: 280px;
+    margin-left: 10%;
+  }
+
+}  
