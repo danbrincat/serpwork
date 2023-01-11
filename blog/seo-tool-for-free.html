@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>SEO Tool for Free - SEO Tool Mule</title>
+  <title>SEO Tool for Free - SERPWork.com</title>
   <meta name="description" content="Find SEO tool for free available online to help with site and on-page optimization to increase your organic traffic." />
   <link rel="canoninical" href="https://seo-tool-mule.com/blog/seo-tool-for-free.html">
     <link rel="stylesheet" href="css/blog-styles.css" type="text/css">
-    <link rel="icon" type="image/png" href="images/free-seo-tools-favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/serp-work-favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta property="og:locale" content="en_GB" />
@@ -19,6 +19,7 @@
     <meta property="og:image" content="https://seo-tool-mule.com/blog/images/analytics-dashboard-1200x627.jpg" />
     <meta property="og:image:width" content="2560" />
     <meta property="og:image:height" content="1440" />
+    <meta name="robots" content="noindex">
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207999186-1">
@@ -59,21 +60,26 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- Top Nav -->
-<div class="topnav" id="myTopnav">
-  <a class="nav-image" href="/">
-    <img src="images/seo-mule-tool-logo-400x152.svg" height="50px" />
-  </a>
-  <span class="site-title">Free SEO Tools</span>
-  <a href="/">Free Keyword Page Grader</a>
-  <a href="/free-seo-tools">Free SEO Tools</a>
-  <a href="/blog" class="active">Blog</a>
-  <a href="/contact">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-<!-- End of Top Nav -->
+<!-- Responsive Nav -->
+<script>
+document.getElementById('topNav').innerHTML = header;
+document.getElementById('menu-4').classList.add('active');
+document.getElementById('bottomFooter').innerHTML = footer;
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  
+<!-- Top Navigation -->
+<div id="topNav"></div>
+<!-- END Top Navigation -->
+  
 <!-- Start of Main Page Content -->
 <div id="main-content">
 
@@ -139,26 +145,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div>
 
-
 <!-- footer -->
-<div id="footer">
-  <div class="footer-container">
-    <div class="col" style="width: 100%;">
-      Cookie Preferences:
-      <span class="cookie-preferences">
-        <a href="javascript: Cookiebot.renew()">Change your consent</a> |
-        <a href="javascript: Cookiebot.withdraw()">Revoke your consent</a><br>
-      </span>
-      <a href="/">Home</a> | 
-      <a href="/blog">Blog</a> | 
-      <a href="/contact">Contact</a> | 
-      <a href="/privacy-policy">Privacy Policy</a>
-    </div>
-    <div class="col">
-      <a href="/"><p class="copyright">seo-tool-mule.com</p></a>
-    </div>
-  </div>
-</div>
+<div id="bottomFooter"></div>
+<!-- footer end -->
 
 </body>
 </html>
