@@ -163,7 +163,7 @@ ul {
 .col-3 {
   width: 30%;
   margin: 0 20px;
-  border: 2px grey solid;
+  background: #f0f0f073;
   padding-bottom: 50px;
   border-radius: 15px;
   display: inline-block;

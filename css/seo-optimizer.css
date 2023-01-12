@@ -210,7 +210,7 @@ p.congrats {
 /* back to top button */
 .fix-bottom {
     position: fixed;
-    bottom: 25px;
+    bottom: 10px;
     width: 100%;
     left: 0;
 }
@@ -228,13 +228,13 @@ p.congrats {
 
 .back-to-top span {
     padding: 9px 12px 0 12px;
-    background: #d9d9d9;
+    background: black;
     border-radius: 5px;
     color: #fff;
     font-size: 35px;
     font-weight: 700;
     font-family: arial, sans-serif;
-    margin-right: 205px;
+    margin-right: 20px;
 }
 
 .back-to-top span:hover {
