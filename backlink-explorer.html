@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Backlink Explorer - SERPWork</title>
+    <script src="scripts/menus.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="images/serp-work-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    <!-- GDPR Popup Notice Script -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="ead532be-e158-4a89-9fed-8bda4ca0eb40" data-blockingmode="auto" type="text/javascript"></script>
+    <!-- End GDPR Popup Notice Script -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-207999186-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-207999186-1');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KW343TJ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Responsive Nav -->
+<script>
+document.getElementById('topNav').innerHTML = header;
+document.getElementById('menu-5').classList.add('active');
+document.getElementById('bottomFooter').innerHTML = footer;
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW343TJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Top Navigation -->
+<div id="topNav"></div>
+<!-- END Top Navigation -->
+
+<!-- Top mobile banner ad -->
+<div class="banner-mobile-top">
+</div>
+<!-- End of banner -->
+<!-- Left side banner ad -->
+<div class="banner-place-left">
+</div>
+<!-- End of banner -->
+<!-- Start of Main Page Content -->
+<div id="main-content">
+  
+  <h1>Backlink Explorer</h1>
+
+  <p style="text-align: center; margin: 10px 20px 20px 20px; color: #4a4a4a; font-size: 16px;">Enter your website domain or your page URL followed by your competitors' information to quickly identify backlink opportunities.<br>This report will show you who links to your competitors and doesn't link to you.<br>These are easy to leverage backlink opportunities that you can start going after today.</p>
+
+<div class="text-entry">
+  <form autocomplete="off" onsubmit="return false">
+  <div class="form-keywords">
+  <input type="url" name="url" id="url-input" placeholder="Enter a competitor website" required> <button onclick="show2()" style="margin-right: 50px;">+</button>
+  <div id="site2" class="hide"><input type="url" name="url" id="url-input" placeholder="Enter a competitor website"> <button onclick="show3()">+</button> <button onclick="hide2()">-</button></div>
+   <div id="site3" class="hide"><input type="url" name="url" id="url-input" placeholder="Enter a competitor website"> <button onclick="show4()">+</button> <button onclick="hide3()">-</button></div>
+   <div id="site4" class="hide"><input type="url" name="url" id="url-input" placeholder="Enter a competitor website"> <button onclick="show5()">+</button> <button onclick="hide4()">-</button></div>
+   <div id="site5" class="hide"><input type="url" name="url" id="url-input" placeholder="Enter a competitor website"> <button onclick="hide5()" style="margin-right: 50px;">-</button></div>
+  <button onclick="getVal();" class="submit-button">SUBMIT</button>
+</div>
+</form>
+</div>
+  
+<div id="results" class="hide">
+  <h3>Backlink Opportunities</h3>
+  <button>Export to CSV</button>
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th>Referring Page URL</th>
+    <th>Title</th>
+    <th>Page Authority</th>
+    <th>Domain Authority</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td><a href="">https://example.com/page1 <span><img src="https://app.neilpatel.com/static/media/link.46fcd7469f5d88f7ca612706433324d2.svg" alt="Image" width="12" height="12"></span></a></td>
+    <td>The best example you've ever seen</td>
+    <td>35</td>
+    <td>88</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><a href="">https://fish-food.net/set/how-to-feed-a-shark.html <span><br><img src="https://app.neilpatel.com/static/media/link.46fcd7469f5d88f7ca612706433324d2.svg" alt="Image" width="12" height="12"></span></a></td>
+    <td>Feeding sharks is easy | Fish Food Directory</td>
+    <td>22</td>
+    <td>78</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><a href="">http://wikipedia.org/pages/rocket-ships/ <span><br><img src="https://app.neilpatel.com/static/media/link.46fcd7469f5d88f7ca612706433324d2.svg" alt="Image" width="12" height="12"></span></a></td>
+    <td>Wikipedia.org.... The site for everything</td>
+    <td>50</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><a href="">https://www.smosh.com <br><span><br><img src="https://app.neilpatel.com/static/media/link.46fcd7469f5d88f7ca612706433324d2.svg" alt="Image" width="12" height="12"></span></a></td>
+    <td>Remember when we watched Smosh</td>
+    <td>64</td>
+    <td>70</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><a href="">http://anker.co.uk/products/speaker-xt54/ <br><span><br><img src="https://app.neilpatel.com/static/media/link.46fcd7469f5d88f7ca612706433324d2.svg" alt="Image" width="12" height="12"></span></a></td>
+    <td>50% of best speakers online now</td>
+    <td>98</td>
+    <td>68</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><a href="">https://bbc.co.uk/iPlayer/Doctor-Who&amp;watch <br><span><br><img src="https://app.neilpatel.com/static/media/link.46fcd7469f5d88f7ca612706433324d2.svg" alt="Image" width="12" height="12"></span></a></td>
+    <td>Watch New Episodes of Doctor Who Here!</td>
+    <td>70</td>
+    <td>68</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><a href="">https://the-end.com/pages/welcome-to-the-end-of-days/ <br><span><br><img src="https://app.neilpatel.com/static/media/link.46fcd7469f5d88f7ca612706433324d2.svg" alt="Image" width="12" height="12"></span></a></td>
+    <td>I'm so glad I can stop thinking of examples</td>
+    <td>40</td>
+    <td>62</td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+<!-- Right side banner ad -->
+<div class="banner-place-right">
+</div>
+<!-- End of banner -->
+<!-- Bottom mobile banner ad -->
+<div class="banner-mobile-bottom">
+</div>
+<!-- End of banner -->
+
+<!-- GDPR Popup -->
+  <script id="CookieDeclaration" src="https://consent.cookiebot.com/ead532be-e158-4a89-9fed-8bda4ca0eb40/cd.js" type="text/javascript" async></script>
+<!-- EndGDPR Popup -->
+
+<!-- footer -->
+<div id="bottomFooter"></div>
+<!-- footer end -->
+  
+<style>
+.text-entry {
+    text-align: center;
+    background-color: #1fa0ea;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+}
+button.submit-button {
+    background: #85d3ff;
+    width: 80%;
+    color: #545454;
+    margin-top: 20px;
+}
+.hide {
+  display: none;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+table {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+td {
+  padding: 10px;
+  border-top: black 3px solid;
+}
+.form-keywords button {
+  color: white;
+  margin-right: 10px;
+}
+h3 {
+  text-align: center;
+}
+</style>
+  
+<script>
+  function getVal() {
+    var results = document.getElementById("results");
+    results.classList.remove("hide", true);
+  }
+
+  function show2() {
+    var site = document.getElementById("site2");
+    site.classList.remove("hide", true);
+  }
+
+    function hide2() {
+    var site = document.getElementById("site2");
+    site.classList.add("hide", true);
+  }
+
+    function show3() {
+    var site = document.getElementById("site3");
+    site.classList.remove("hide", true);
+  }
+
+    function hide3() {
+    var site = document.getElementById("site3");
+    site.classList.add("hide", true);
+  }
+
+    function show4() {
+    var site = document.getElementById("site4");
+    site.classList.remove("hide", true);
+  }
+
+    function hide4() {
+    var site = document.getElementById("site4");
+    site.classList.add("hide", true);
+  }
+
+  function show5() {
+    var site = document.getElementById("site5");
+    site.classList.remove("hide", true);
+  }
+
+    function hide5() {
+    var site = document.getElementById("site5");
+    site.classList.add("hide", true);
+  }
+</script>  
+
+</body>
+</html>
