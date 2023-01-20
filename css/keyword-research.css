@@ -92,3 +92,7 @@ table#keyword-results tbody {
     text-decoration: none;
 }
 
+#search-toolbar input {
+    width: 24%;
+}
+
