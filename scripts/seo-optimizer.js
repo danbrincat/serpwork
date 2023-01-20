@@ -43,14 +43,14 @@ async function getVal () {
   const getSEOData = {
     "async": true,
     "crossDomain": true,
-    "url": "https://danbrincat07b.korconnect.io/SEO-Extraction---Radid-API/",
+    "url": "https://canssens-seo-extraction-v1.p.rapidapi.com/seo/api/",
     "method": "POST",
     "redirect": "follow",
     "headers": {
       //"content-type": "application/x-www-form-urlencoded",
       "Access-Control-Allow-Headers": "POST, GET, PUT, DELETE, OPTIONS, HEAD, authorization",
       "x-rapidapi-host": "canssens-seo-extraction-v1.p.rapidapi.com",
-      "x-rapidapi-key": "lczAS54E1H5YUrcsODMOw4TUSj4vFYIEUeovxUC6"
+      "x-rapidapi-key": "a457a55158mshc65a31831200484p17de4cjsna2c4192c7641"
     },
     "data": {
       "url": urlReview
