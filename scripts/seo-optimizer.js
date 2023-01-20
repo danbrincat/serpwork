@@ -75,7 +75,7 @@ async function getVal () {
     status = "ERROR";
   })
 
-  // Word Count API Fetch
+  /*// Word Count API Fetch
   .then(getWordCountAPI => {
     let wordCountUrl = `https://text-extract7.p.rapidapi.com/?url=${urlReview}`;
     return fetch(wordCountUrl, {
@@ -103,7 +103,7 @@ async function getVal () {
       console.error(err);
       status = "ERROR";
     });
-  })
+  })*/
 
   // Image Data API Fetch
   .then (getImageMetaAPI => {
